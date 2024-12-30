@@ -1,6 +1,6 @@
 /* Collapsed tab bar styling */
 .tabbar-wrapper {
-    width: 37px; /* Collapsed width */
+    width: 31px; /* Collapsed width */
     overflow: hidden;
     position: fixed; /* Ensure the tab bar stays over the webpage */
     left: 0; /* Keep it at the left edge of the window */
@@ -13,7 +13,7 @@
 
 /* Expanded tab bar on hover */
 .tabbar-wrapper:hover {
-    width: 230px; /* Expanded width */
+    width: 240px; /* Expanded width */
 }
 
 /* Default state for tab headers (collapsed view) */
@@ -41,3 +41,4 @@
 .tabbar-wrapper:hover .tab-header .title {
     opacity: 1; /* Make titles visible */
     overflow:
+}
