@@ -1,0 +1,43 @@
+/* Collapsed tab bar styling */
+.tabbar-wrapper {
+    width: 37px; /* Collapsed width */
+    overflow: hidden;
+    position: fixed; /* Ensure the tab bar stays over the webpage */
+    left: 0; /* Keep it at the left edge of the window */
+    top: 0;
+    bottom: 0;
+    z-index: 1000; /* Keep the tab bar on top of all other elements */
+    transition: width 0.05s ease-in-out; /* Faster transition for width */
+    background-color: var(--colorBg); /* Optional: Match tab bar's background */
+}
+
+/* Expanded tab bar on hover */
+.tabbar-wrapper:hover {
+    width: 230px; /* Expanded width */
+}
+
+/* Default state for tab headers (collapsed view) */
+.tab-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflowing content in collapsed state */
+}
+
+.tab-header .title {
+    opacity: 0; /* Hide tab titles in collapsed state */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: opacity 0.05s ease-in-out; /* Faster transition for title visibility */
+}
+
+/* Expanded state for tab headers (on hover) */
+.tabbar-wrapper:hover .tab-header {
+    justify-content: flex-start; /* Align content properly */
+    overflow: visible; /* Show full content */
+}
+
+.tabbar-wrapper:hover .tab-header .title {
+    opacity: 1; /* Make titles visible */
+    overflow:
